@@ -1,17 +1,43 @@
 .wrapper {
-    margin: 25%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #348cb2;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+}
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: -3%;
 }
 h1 {
     display: flex;
     justify-content: center;
     color: rgb(47, 219, 182);
 }
+a   {
+    color: rgb(17, 4, 4);
+    outline: 0; 
+    text-decoration: none;
+    }
+.podtytul {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
 .ikony {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    color: blue;
+    justify-content: center;
+}
+.social_media {
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    border: solid 1px;
+    color: rgb(255, 255, 255);
+    width: 72px;
+    height: 72px;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
 }
