@@ -1,3 +1,6 @@
+body {
+    padding: 0;
+}
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -11,16 +14,22 @@ p {
     display: flex;
     justify-content: center;
     margin-top: -3%;
+    font-weight: 900;
+    color: #99d9f562;
 }
 h1 {
     display: flex;
     justify-content: center;
     color: rgb(47, 219, 182);
+    margin-bottom: 0;
+    font-size: 60px;
 }
 a   {
-    color: rgb(17, 4, 4);
+    display: flex;
+    color: rgb(255, 255, 255);
     outline: 0; 
     text-decoration: none;
+    font-size: 42px; 
     }
 .podtytul {
     margin-top: 0px;
@@ -31,8 +40,9 @@ a   {
     justify-content: center;
 }
 .social_media {
+    display: flex;
     transition: all 0.3s ease-in-out;
-    border-radius: 50%;
+    border-radius: 100%;
     border: solid 1px;
     color: rgb(255, 255, 255);
     width: 72px;
@@ -40,4 +50,9 @@ a   {
     margin: 0 10px;
     justify-content: center;
     align-items: center;
+}
+
+.social_media:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.175)
 }
