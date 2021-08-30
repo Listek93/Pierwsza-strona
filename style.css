@@ -1,39 +1,52 @@
 body {
-    padding: 0;
+    background: url("mountains-1412683.svg") repeat-x bottom left;
+    background-size: 3100px;
+    height: 100%; 
+    background-attachment: fixed;
+}
+.calosc {
+    background: url("mountains-1412683.svg") repeat-x bottom left;
+    background-size: 3100px;
+    height: 100%; 
+    
 }
 .wrapper {
+    animation: show 1s ease-in-out 1s forwards;
+    opacity: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #348cb2;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: none;
+
+
 }
 p {
     display: flex;
     justify-content: center;
     margin-top: -3%;
     font-weight: 900;
-    color: #99d9f562;
+    color: rgb(105, 129, 105, 0.897)
 }
 h1 {
     display: flex;
     justify-content: center;
-    color: rgb(47, 219, 182);
-    margin-bottom: 0;
-    font-size: 60px;
+    color: rgba(105, 129, 105, 0.897);
+    margin-bottom: 5px;
+    font-size: 50px;
 }
 a   {
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(105, 129, 105, 0.897);
     outline: 0; 
     text-decoration: none;
     font-size: 42px; 
     }
 .podtytul {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .ikony {
     display: flex;
@@ -44,7 +57,7 @@ a   {
     transition: all 0.3s ease-in-out;
     border-radius: 100%;
     border: solid 1px;
-    color: rgb(255, 255, 255);
+    color: rgb(105, 129, 105, 0.897);
     width: 72px;
     height: 72px;
     margin: 0 10px;
@@ -54,5 +67,16 @@ a   {
 
 .social_media:hover {
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.175)
+    background-color: rgba(255, 255, 255, 0.5)
 }
+
+@keyframes show {
+    0% {
+      margin-top: -268px;
+      opacity: 0;
+    }
+    100% {
+      margin-top: -300px;
+      opacity: 1;
+    }
+  }
